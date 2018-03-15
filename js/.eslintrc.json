@@ -1,0 +1,56 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "prefer-template": [
+      "error"
+    ],
+    "no-inline-comments": [
+      "error"
+    ],
+    "no-console": [
+      "error"
+    ],
+    "no-var": [
+      "error"
+    ],
+    "prefer-const": [
+      "error", {
+        "destructuring": "all",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "no-duplicate-imports": [
+      "error"
+    ],
+    "no-lonely-if": [
+      "error"
+    ],
+    "no-multiple-empty-lines": [
+      "error"
+    ]
+  }
+}
