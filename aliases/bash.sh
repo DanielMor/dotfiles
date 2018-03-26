@@ -32,7 +32,7 @@ d-bash () {
 #new way to clean docker
 alias d-prune="docker system prune -a --volumes"
 
-alias start='npm start'
+alias s='npm start'
 
 mdcd() {
   mkdir $1
