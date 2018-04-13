@@ -30,7 +30,11 @@ d-bash () {
 }
 
 #new way to clean docker
-alias d-prune="docker system prune -a --volumes"
+alias d-prune='docker system prune -a --volumes'
+alias dc-up='docker-compose up -d'
+alias dc-stop='docker-compose stop'
+alias dc-build='docker-compose build'
+alias dc-start='dc-build && dc-up'
 
 alias s='npm start'
 
