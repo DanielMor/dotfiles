@@ -1,0 +1,10 @@
+#!/bin/bash
+
+current=$(git branchname)
+branch=${1:-$current}
+destiny=${2:-master}
+echo "Delete branch $branch"
+
+git checkout $destiny
+git push -d origin $branch > /dev/null
+git branch -D $branch
