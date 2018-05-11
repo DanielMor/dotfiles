@@ -5,8 +5,12 @@ alias c='clear'
 alias home='cd ~'
 alias repos='cd ~/Documents/GitHub/'
 alias exp='explorer .'
+#alias folder='open .'
 alias sb='subl .'
+alias ll='ls -l'
+
 alias edit='subl'
+alias load='source ~/.bash_profile'
 
 alias g='git'
 alias gui='git-gui'
@@ -15,9 +19,10 @@ alias log-pretty='git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s
 alias postman='chrome --app-id=fhbjgbiflinjbdggehcddcbncdddomop'
 
 # open on browser the remote repository (windows)
-alias gh='start https://github.$(git config remote.origin.url | cut -f2 -d. | tr ":" /)'
+alias gh='start https://$(git config remote.origin.url | cut -f2 -d@ | tr ":" /)'
+
 # macOS/Unix
-#alias gh='open https://github.$(git config remote.origin.url | cut -f2 -d. | tr ":" /)'
+#alias gh='open https://$(git config remote.origin.url | cut -f2 -d@ | tr ":" /)'
 
 d-clean() {
   docker rm -f $(docker ps --filter "status=exited" -q)
@@ -45,7 +50,7 @@ alias dc-down='docker-compose down'
 
 alias s='npm start'
 
-mdcd() {
+mkcd() {
   mkdir $1
   cd $1
 }
