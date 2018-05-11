@@ -5,7 +5,7 @@ alias c='clear'
 alias home='cd ~'
 alias repos='cd ~/Documents/GitHub/'
 alias exp='explorer .'
-#alias folder='open .'
+alias folder='open .'
 alias sb='subl .'
 alias ll='ls -l'
 
