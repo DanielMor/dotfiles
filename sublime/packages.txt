@@ -1,0 +1,20 @@
+All Autocomplete
+AutoFileName
+Babel
+Babel Snippets
+Color Highlighter
+EditorConfig
+Eslint
+Import Cost
+JsPrettier
+MarkdownPreview
+Materialize
+PyV8
+Sass
+SCSS
+SublimeLiter
+SublimeLiter-eslint
+SublimeLiter-stylelint
+SublimeLiter-tslint
+Sublimerge 3
+TypeScript
